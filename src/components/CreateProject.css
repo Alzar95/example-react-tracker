@@ -1,0 +1,7 @@
+.button-create-project {
+    display: inline-block;
+    padding: 7px 13px 7px 13px;
+    border: 1px solid crimson;
+    color: white;
+    background: crimson;
+}

@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+}
+
+.registration-block {
+    font-family: Arial, serif;
+    margin-top: 0;
+    padding-top: 3%;
+    padding-left: 40%;
+    padding-bottom: 3%;
+    background: #eeeeee;
+}
+
+.registration-block h2 {
+    margin: 0;
+}
+
+.registration-block .registration-header {
+    padding-bottom: 2%;
+}
+
+.registration-block .field-for-registration {
+    width: 30%;
+    height: 25px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.registration-block .field-for-choose-role {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.registration-block .forms-for-filling-registration {
+    font-weight: bold;
+}
+
+.registration-block .button-ok {
+    padding: 7px 13px 7px 13px;
+    border: 1px solid steelblue;
+    color: white;
+    background: steelblue;
+}
+
+.registration-block .link-for-open-login {
+    margin-left: 2%;
+    cursor: default;
+    color: deepskyblue;
+}
+
+.registration-block .link-for-open-login:hover {
+    color: #ffd111;
+}
+
+.information-message {
+    text-align: center;
+    color: blue;
+}
+
+/*.registration-block .button-registration {*/
+    /*margin-left: 2%;*/
+    /*padding: 7px 13px 7px 13px;*/
+    /*border: 1px solid crimson;*/
+    /*color: white;*/
+    /*background: crimson;*/
+/*}*/
+
+/*.registration-block {*/
+    /*width: 30%;*/
+    /*margin-left: 35%;*/
+    /*background: yellow;*/
+/*}*/
+
+/*.registration-block .registration-header {*/
+    /*text-align: center;*/
+/*}*/
+
+/*.registration-block .forms-for-filling-registration {*/
+    /*font-weight: bold;*/
+/*}*/

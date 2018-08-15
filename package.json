@@ -1,0 +1,51 @@
+{
+  "name": "task-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+    "@fortawesome/react-fontawesome": "0.1.0-11",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "cors": "*",
+    "ejs": "^2.6.1",
+    "emailjs": "^2.2.0",
+    "express": "^4.16.3",
+    "express-mysql-session": "^2.0.1",
+    "express-session": "^1.15.6",
+    "immutable": "^3.8.2",
+    "js-hibernate": "^1.0.14",
+    "multi-select-react": "^0.1.8",
+    "mysql": "github:mysqljs/mysql",
+    "nodemailer": "^4.6.7",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "prop-types": "^15.6.2",
+    "rand-token": "^0.4.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-edit-inline": "^1.0.8",
+    "react-icons-kit": "^1.1.7",
+    "react-modal": "^3.5.1",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-select": "^2.0.0",
+    "react-text-edit": "^0.2.3",
+    "redux": "^4.0.0",
+    "redux-immutable": "^4.0.0",
+    "redux-react-session": "^2.5.0",
+    "redux-thunk": "^2.3.0",
+    "xoauth2": "^1.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}

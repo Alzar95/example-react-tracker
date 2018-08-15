@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+.login-block {
+    font-family: Arial, serif;
+    margin-top: 0;
+    padding-top: 3%;
+    padding-left: 40%;
+    padding-bottom: 3%;
+    background: #eeeeee;
+}
+
+.login-block h2 {
+    margin: 0;
+}
+
+.login-block .login-header {
+    padding-bottom: 2%;
+}
+
+.login-block .field-for-login {
+    width: 30%;
+    height: 25px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.login-block .forms-for-filling-login {
+    font-weight: bold;
+}
+
+.login-block .button-login {
+    padding: 7px 13px 7px 13px;
+    border: 1px solid steelblue;
+    color: white;
+    background: steelblue;
+}
+
+.login-block .button-registration {
+    margin-left: 2%;
+    padding: 7px 13px 7px 13px;
+    border: 1px solid crimson;
+    color: white;
+    background: crimson;
+}

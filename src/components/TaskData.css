@@ -1,0 +1,80 @@
+.task-page-block {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.task-page-block .back-button-on-login-in-task-data {
+    margin-top: 1%;
+    color: black;
+    border: 1px solid white;
+    background: white;
+}
+
+.task-page-block .task-title {
+    text-align: center;
+    color: purple;
+}
+
+.task-page-block .list-status-in-task-data {
+    margin-bottom: 1%;
+}
+
+.task-page-block .field-for-create-comment-for-task {
+    width: 100%;
+}
+
+.task-page-block .list-comments-in-task {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.task-page-block .submit-form-for-write-comment-for-task {
+    margin-bottom: 2%;
+}
+
+.task-page-block .list-comments-in-task h3 {
+    margin: 0;
+}
+
+.task-page-block .list-comments-in-task li {
+    padding-bottom: 2%;
+}
+
+.task-page-block .list-comments-in-task li:nth-child(odd) {
+    background: #e5e5e5;
+}
+
+.task-page-block .list-comments-in-task li:nth-child(even) {
+    background: #f4f4f4;
+}
+
+.task-page-block .list-comments-in-task .comment-text-in-task-data {
+    display: inline-block;
+    width: 83%;
+}
+
+/*.task-page-block .buttons-group-in-task-data {*/
+    /*!*position: absolute;*!*/
+    /*display: inline-block;*/
+    /*height: 100%;*/
+    /*vertical-align: middle;*/
+/*}*/
+
+.task-page-block .list-comments-in-task .button-edit-in-task-data {
+    display: inline-block;
+    margin-left: 2%;
+    padding: 7px 13px 7px 13px;
+    border: 1px solid gold;
+    color: white;
+    background: gold;
+}
+
+.task-page-block .list-comments-in-task .button-delete-in-task-data {
+    display: inline-block;
+    margin-left: 2%;
+    padding: 7px 13px 7px 13px;
+    border: 1px solid red;
+    color: white;
+    background: red;
+}

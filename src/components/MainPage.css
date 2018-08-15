@@ -1,0 +1,61 @@
+.main-page-block {
+   width: 70%;
+    margin-left: 15%;
+}
+
+.main-page-block .button-create-project-in-main-page {
+    display: inline-block;
+    margin-left: 15%;
+    padding-top: 3%;
+    padding-right: 50%;
+    padding-bottom: 2%;
+}
+
+.main-page-block .button-create-task-in-main-page {
+    display: inline-block;
+}
+
+.main-page-block .projects-in-main-page {
+    margin-left: 45%;
+    padding-bottom: 1%;
+    font-weight: 600;
+}
+
+.main-page-block .list-projects-in-main-page {
+    display: block;
+    width: 10%;
+    height: 30px;
+    text-align: center;
+    margin-left: 45%;
+    margin-bottom: 1%;
+}
+
+.main-page-block .list-tasks-in-main-page {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-page-block .list-tasks-in-main-page li {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    cursor: default;
+}
+
+.main-page-block .list-tasks-in-main-page li a:hover {
+    color: #ffd111;
+}
+
+.main-page-block .list-tasks-in-main-page li:nth-child(odd) {
+    background: #eeeeee;
+}
+
+.main-page-block .list-tasks-in-main-page li:nth-child(even) {
+    background: #cccccc;
+}
+
+.main-page-block .main-title {
+    text-align: center;
+    color: purple;
+}
