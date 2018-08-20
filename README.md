@@ -7,3 +7,5 @@
 5. babel-node app.js
 6. Open new terminal in example-tracker
 7. npm run start
+
+**Примечание:** Дамп БД task_tracker.sql в корне проекта.
