@@ -6,6 +6,7 @@ import axios from "axios/index";
 import Icon from 'react-icons-kit';
 import { circleLeft } from 'react-icons-kit/icomoon/circleLeft';
 import './TaskData.css';
+import {apiPrefix} from '../etc/config.json';
 
 class TaskData extends Component {
     constructor() {
@@ -35,18 +36,18 @@ class TaskData extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:7000/projects')
+        axios.get(`${apiPrefix}/projects`)
             .then(res => {
                 const arrayNameProject = res.data;
                 this.setState({ arrayNameProject: arrayNameProject });
             });
-        axios.get('http://localhost:7000/tasks')
+        axios.get(`${apiPrefix}/tasks`)
             .then(res => {
                 const arrayNameTask = res.data;
                 this.setState({ arrayNameTask: arrayNameTask });
             });
 
-        axios.get('http://localhost:7000/projectsusers')
+        axios.get(`${apiPrefix}/projectsusers`)
             .then(res => {
                 const multiSelectDevelopers = res.data;
 
@@ -55,14 +56,14 @@ class TaskData extends Component {
                         this.state.multiSelectDevelopers.push(data) : null);
             });
 
-        axios.get('http://localhost:7000/tasksusers')
+        axios.get(`${apiPrefix}/tasksusers`)
             .then(res => {
                 const arrayOfRelationsBetweenTheTaskAndTheDeveloper = res.data;
 
                 this.setState({ arrayOfRelationsBetweenTheTaskAndTheDeveloper: arrayOfRelationsBetweenTheTaskAndTheDeveloper });
             });
 
-        axios.get('http://localhost:7000')
+        axios.get(`${apiPrefix}`)
             .then(res => {
                 const multiSelectDevelopersForTask = [];
 
@@ -74,7 +75,7 @@ class TaskData extends Component {
                 this.setState({ multiSelectDevelopersForTask: multiSelectDevelopersForTask });
             });
 
-        axios.get('http://localhost:7000/comments')
+        axios.get(`${apiPrefix}/comments`)
             .then(res => {
                 const listCommentsForTask = res.data;
 

@@ -4,6 +4,7 @@ import Registration from './Registration';
 import { loginUser, currentUser, searchToken, correctToken } from '../actions/index';
 import './Login.css';
 import axios from "axios/index";
+import { apiPrefix } from '../etc/config.json';
 import {connect} from "react-redux";
 
 class Login extends Component {
@@ -25,7 +26,7 @@ class Login extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:7000/login')
+        axios.get(`${apiPrefix}/login`)
             .then(res => {
                 const correctLogin = res.data;
                 this.setState({ correctLogin: correctLogin });

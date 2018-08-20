@@ -1,10 +1,9 @@
 import express from "express";
 import cors from 'cors';
 import bodyParser from 'body-parser';
-import nodemailer from 'nodemailer';
 import randtoken from 'rand-token';
-import transport from 'nodemailer-smtp-transport';
 import mysqlDBConnection from './config/mysqlDBConnection';
+import smtpTransportConnection from './config/smtpTransportConnection';
 import cookieParser from 'cookie-parser';
 
 const app = express();
@@ -47,14 +46,7 @@ app.post('/', (req, res) => {
 
         var smtpTransport;
 
-        smtpTransport = nodemailer.createTransport(transport({
-            service: 'gmail',
-            host: 'localhost:7000',
-            auth: {
-                user: 'developertest1007@gmail.com',
-                pass: '67b1x4z5f'
-            }
-        }));
+        smtpTransport = smtpTransportConnection();
 
         token = randtoken.generate(16);
         host = req.get('localhost:7000');
@@ -69,10 +61,8 @@ app.post('/', (req, res) => {
 
         smtpTransport.sendMail(mailOptions, function(error, response) {
             if (error) {
-                console.log(error);
                 res.end("error");
             } else {
-                console.log("Message sent: " + response.message);
                 res.end("sent");
             }
         });

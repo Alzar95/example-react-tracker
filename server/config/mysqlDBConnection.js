@@ -7,5 +7,4 @@ export default function mysqlDBConnection() {
         password: "",
         database: "task_tracker"
     });
-
 }

@@ -3,6 +3,7 @@ import Select from 'react-select';
 import { currentProject, theTaskWindow, addDeveloperToProject, currentDataTask, currentDataProject, removeDeveloperToProject, correctToken } from '../actions/index';
 import {connect} from "react-redux";
 import axios from "axios/index";
+import { apiPrefix } from '../etc/config.json';
 import CreateProject from './CreateProject';
 import CreateTask from './CreateTask';
 import TaskData from './TaskData';
@@ -28,7 +29,7 @@ class MainPage extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:7000')
+        axios.get(`${apiPrefix}`)
             .then(res => {
                 const multiSelectDevelopers = [];
                 res.data.map((data) => {
@@ -37,24 +38,24 @@ class MainPage extends Component {
 
                 this.setState({ multiSelectDevelopers: multiSelectDevelopers });
             });
-        axios.get('http://localhost:7000/projects')
+        axios.get(`${apiPrefix}/projects`)
             .then(res => {
                 const arrayNameProject = res.data;
                 this.currentDataProject(arrayNameProject);
             });
-        axios.get('http://localhost:7000/tasks')
+        axios.get(`${apiPrefix}/tasks`)
             .then(res => {
                 const arrayNameTask = res.data;
                 this.currentDataTask(arrayNameTask);
             });
 
-        axios.get('http://localhost:7000/projectsusers')
+        axios.get(`${apiPrefix}/projectsusers`)
             .then(res => {
                 const arrayOfRelationsBetweenTheProjectAndTheDeveloper = res.data;
                 this.setState({ arrayOfRelationsBetweenTheProjectAndTheDeveloper: arrayOfRelationsBetweenTheProjectAndTheDeveloper });
             });
 
-        axios.get('http://localhost:7000/tasksusers')
+        axios.get(`${apiPrefix}/tasksusers`)
             .then(res => {
                 const arrayOfRelationsBetweenTheTaskAndTheDeveloper = res.data;
 
